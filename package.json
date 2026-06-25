@@ -1,0 +1,39 @@
+{
+  "name": "would-you-rather",
+  "version": "1.0.0",
+  "description": "A Discord bot written in TypeScript that generates “Would you rather...” questions using an LLM",
+  "homepage": "https://github.com/Joeil92/would-you-rather#readme",
+  "bugs": {
+    "url": "https://github.com/Joeil92/would-you-rather/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joeil92/would-you-rather.git"
+  },
+  "license": "ISC",
+  "author": "Joeil Mohali",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.5.0",
+    "globals": "^17.7.0",
+    "husky": "^9.1.7",
+    "jiti": "^2.7.0",
+    "nodemon": "^3.1.14",
+    "prettier": "3.8.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.26.4"
+  }
+}
