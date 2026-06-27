@@ -9,4 +9,7 @@ export const envSchema = z.object({
   DISCORD_TOKEN: z.string().min(1, 'DISCORD_TOKEN est requis'),
   DISCORD_CLIENT_ID: z.string().min(1, 'DISCORD_CLIENT_ID est requis'),
   DISCORD_GUILD_ID: z.string().optional(), // Deploy commands in dev env only
+
+  // Groq AI
+  GROQ_API_KEY: z.string().min(1, 'GROQ_API_KEY est requis'),
 })

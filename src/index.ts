@@ -6,7 +6,12 @@ import { CommandLoader } from './lib/command-loader.js'
 import { Bot } from './client.js'
 
 async function main(): Promise<void> {
-  const client = new Discord({ intents: [GatewayIntentBits.Guilds] })
+  const client = new Discord({
+    intents: [
+      GatewayIntentBits.Guilds,
+      GatewayIntentBits.GuildMessageReactions,
+    ],
+  })
   const loader = new CommandLoader(logger)
   const bot = new Bot(client, loader, logger)
 
